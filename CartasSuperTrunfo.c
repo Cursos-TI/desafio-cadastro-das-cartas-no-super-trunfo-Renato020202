@@ -9,6 +9,8 @@ int main(){
     float area;
     float PIB;
     int  pontoturistico;
+    float densidadepopulacional = (float) população/area;
+    float pibpercapita = (float) PIB/população;
 
     char letra2[100];
     char codigo2[100];
@@ -17,6 +19,10 @@ int main(){
     float area2;
     float PIB2;
     int pontoturistico2;
+    float densidadepopulacional2 = (float) pontoturistico2/area2;
+    float pibpercapita2 = ( float) PIB2/população2;
+
+
 
  // informaçãoes sobre a primeira carta~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
@@ -42,6 +48,14 @@ int main(){
 
     printf("\ndigite o numero de ponto turisticos:");
     scanf("%d", &pontoturistico);
+
+//calculo da densidade populacional e pib per capita
+
+densidadepopulacional = população / area;
+
+pibpercapita = PIB / população;
+
+
     printf("\n");
 
 // informacões da segunda carta~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -69,6 +83,13 @@ int main(){
 
     printf("\ndigite o numero de ponto turisticos:");
     scanf("%d", &pontoturistico2);
+
+// calculo da densidade populacional e pib per capita
+
+densidadepopulacional2 = população2 / area2;
+
+pibpercapita2 = PIB2 / população2;
+
     printf("\n");
 
 
@@ -81,9 +102,11 @@ printf(" \na letra do estado:%s", letra);
 printf(" \ncodigo da carta:%s", codigo);
 printf(" \nnome da cidade:%s", cidade);
 printf(" \nnumero de habitantes:%d", população);
-printf(" \na area é:%f km", area);
-printf(" \nPIB:%f bilhoês de reais", PIB);
+printf(" \na area é:%.5f km", area);
+printf(" \nPIB:%.5f bilhoês de reais", PIB);
 printf(" \nnumero de pontos turisticos:%d", pontoturistico);
+printf(" \ndensidade populacional:%.f hab/km ", densidadepopulacional);
+printf(" \nPIB per Capita: %.f  reais", pibpercapita);
 
 printf("\n");
 
@@ -93,9 +116,11 @@ printf(" \na letra do estado:%s", letra2);
 printf(" \ncodigo da carta:%s", codigo2);
 printf(" \nnome da cidade:%s", cidade2);
 printf(" \nnumero de habitantes:%d", população2);
-printf(" \na area é:%f km", area2);
-printf(" \nPIB:%f bilhoês de reais", PIB2);
+printf(" \na area é:%.5f km", area2);
+printf(" \nPIB:%.5f bilhoês de reais", PIB2);
 printf(" \nnumero de pontos turisticos:%d", pontoturistico2);
+printf(" \ndensidade populacional:%.f hab/km ", densidadepopulacional2);
+printf(" \nPIB per Capita: %.f reais", pibpercapita2);
 
 
     return 0;
